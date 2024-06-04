@@ -40,7 +40,7 @@ And use it!
 ```typescript
 import { translate } from "@ezralazuardy/aksara";
 
-console.log(translate("aksara jawa")); // ꦲꦏ꧀ꦱꦫ​ꦗꦮ
+const result = translate("aksara jawa"); // ꦲꦏ꧀ꦱꦫ​ꦗꦮ
 ```
 
 For advanced usage, please read the [documentation](#-documentation) below.
@@ -54,7 +54,7 @@ If you want to revert the translation, you can just use the `translate` function
 ```typescript
 import { translate } from "@ezralazuardy/aksara";
 
-console.log(translate("ꦲꦏ꧀ꦱꦫ​ꦗꦮ")); // aksara jawa
+const result = translate("ꦲꦏ꧀ꦱꦫ​ꦗꦮ"); // aksara jawa
 ```
 
 No need to use other function. Simple, right?

@@ -9,19 +9,33 @@
 
 ## ꦲ aksara
 
-Translate a text into Javanese Script in one line of code.
+<br/>
+
+<p align="center">
+  <img width="480" alt="image" src="https://github.com/ezralazuardy/aksara/assets/24422019/fde5abec-3419-4ea6-a358-0a2a9ffb7c00"/>
+  <p align="center">
+    <i>
+      There were (two) emissaries. They began to fight.<br/>
+      Their valor was equal. They both fell dead.
+    </i>
+  </p>
+</p>
+
+<br/>
 
 ```typescript
-translate("aksara jawa"); // ꦲꦏ꧀ꦱꦫ​ꦗꦮ
+translate("hana caraka"); // ꦲꦤ ꦕꦫꦏ
 ```
 
-Aksara is a simple package that helps you to translate your text into Javanese Script or also known as _Aksara Jawa_, which is one of the most beautiful scripts in the world.
+Aksara is a simple package that helps you to translate your text into Javanese Script or also known as _Aksara Jawa_, which is one of the most beautiful scripts in the world. You can translate a latin text into Javanese Script or vice-versa in just one line of code.
 
 The translated text will be formatted as [Unicode](https://home.unicode.org) string of Javanese Script characters that can be used in any text editor or web browser, without any specific font requirement.
 
 It's also typescript compatible, so you can use it in any javascript or typescript project.
 
-> Reference: [Wikipedia](https://en.wikipedia.org/wiki/Javanese_script)
+> Demo App: https://aksara-demo.lazuardy.tech
+
+> Reference: [Wikipedia](https://en.wikipedia.org/wiki/Javanese_script), [Matador Network](https://matadornetwork.com/read/5-beautiful-endangered-alphabets)
 
 <br/>
 
@@ -40,7 +54,7 @@ And use it!
 ```typescript
 import { translate } from "@ezralazuardy/aksara";
 
-const result = translate("aksara jawa"); // ꦲꦏ꧀ꦱꦫ​ꦗꦮ
+const result = translate("hana caraka"); // ꦲꦤ ꦕꦫꦏ
 ```
 
 For advanced usage, please read the [documentation](#-documentation) below.
@@ -54,7 +68,7 @@ If you want to revert the translation, you can just use the `translate` function
 ```typescript
 import { translate } from "@ezralazuardy/aksara";
 
-const result = translate("ꦲꦏ꧀ꦱꦫ​ꦗꦮ"); // aksara jawa
+const result = translate("ꦲꦤ ꦕꦫꦏ"); // hana caraka
 ```
 
 No need to use other function. Simple, right?
@@ -66,3 +80,4 @@ No need to use other function. Simple, right?
 A proper documentation is still in progress 🥲
 
 > Written in [Typescript](https://www.typescriptlang.org). Heavily inspired by [@bennylin](https://github.com/bennylin).
+

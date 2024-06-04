@@ -1168,12 +1168,12 @@ function getSound(
  * @param {string} text
  * @returns {boolean}
  */
-export function hasAksara(text: string): boolean {
+export const hasAksara = (text: string): boolean => {
   const aksaras = Object.keys(javaneseToLatin);
   for (let i = 0; i < aksaras.length; i++)
     if (text.includes(aksaras[i])) return true;
   return false;
-}
+};
 
 /**
  * Translate Latin to Javanese Script.
@@ -1181,10 +1181,10 @@ export function hasAksara(text: string): boolean {
  * @param {TranslateConfiguration} config
  * @returns {string}
  */
-export function translate(
+export const translate = (
   latin: string,
   config: TranslateConfiguration | null = null,
-): string {
+): string => {
   if (hasAksara(latin)) return translateAksara(latin);
 
   let i = 0;
@@ -1361,14 +1361,14 @@ export function translate(
     ret += getSound(str.substring(pi, i), config, vowelPrev);
   }
   return trim(ret);
-}
+};
 
 /**
  * Translate Aksara Jawa to Latin.
  * @param {stirng} aksara
  * @returns string
  */
-export function translateAksara(aksara: string): string {
+export const translateAksara = (aksara: string): string => {
   const regexp_file = javaneseToLatin;
   const str = aksara;
   let trans: string = str;
@@ -1695,4 +1695,4 @@ export function translateAksara(aksara: string): string {
   );
 
   return sentence.join(" ");
-}
+};

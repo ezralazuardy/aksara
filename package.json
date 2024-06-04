@@ -1,6 +1,6 @@
 {
   "name": "@ezralazuardy/aksara",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ꦲ Headless javanese script translator.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

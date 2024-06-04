@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - name: "📦 Install Dependencies"
+        run: bun install
+      - name: "🔍 Performing Lint"
+        run: bun run lint
+      - name: "🧪 Running Tests"
+        run: bun run test
+      - name: "🔨 Building Package"
+        run: bun run build
+

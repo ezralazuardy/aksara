@@ -51,7 +51,7 @@
     "@typescript-eslint/type-utils": "^7.10.0",
     "@typescript-eslint/utils": "^7.10.0",
     "chai": "^4.4.1",
-    "eslint": "9.x",
+    "eslint": "^9.4.0",
     "eslint-plugin-react": "^7.34.1",
     "globals": "^15.3.0",
     "mocha": "^10.4.0",

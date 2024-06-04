@@ -11,14 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
+      - uses: oven-sh/setup-bun@v1
       - name: "📦 Install Dependencies"
-        run: npm ci --legacy-peer-deps
+        run: bun install
       - name: "🔍 Performing Lint"
-        run: npm run lint
+        run: bun run lint
       - name: "🧪 Running Tests"
-        run: npm run test
+        run: bun run test
       - name: "🔨 Building Package"
-        run: npm run build
+        run: bun run build

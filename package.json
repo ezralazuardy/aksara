@@ -1,9 +1,8 @@
 {
-  "name": "@ezralazuardy/gem",
-  "version": "0.0.8",
-  "description": "💎 A more fun way to interact with Gemini.",
+  "name": "@ezralazuardy/aksara",
+  "version": "0.0.1",
+  "description": "ꦲ Headless javanese script translator.",
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "/dist"
@@ -11,17 +10,17 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint src/ --cache",
-    "prepare": "npm run build && npm run lint"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ezralazuardy/gem.git"
+    "url": "git+https://github.com/ezralazuardy/aksara.git"
   },
   "keywords": [
-    "gem",
-    "gemini",
-    "google",
-    "ai",
+    "aksara",
+    "javanese",
+    "jawa",
+    "translate",
     "npm",
     "pnpm",
     "yarn",
@@ -31,36 +30,32 @@
   "author": "Ezra Lazuardy <ezralazuardy@icloud.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ezralazuardy/gem/issues"
+    "url": "https://github.com/ezralazuardy/aksara/issues"
   },
-  "homepage": "https://github.com/ezralazuardy/gem#readme",
+  "homepage": "https://github.com/ezralazuardy/aksara#readme",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@ai-sdk/google": "^0.0.14",
-    "ai": "^3.1.12",
-    "dotenv": "^16.4.5",
-    "openai": "^4.47.1",
-    "react": "^18.3.1",
-    "typescript": "^5.4.5",
-    "zod": "^3.23.8"
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@eslint-community/eslint-utils": "^4.4.0",
     "@eslint/compat": "^1.0.1",
-    "@eslint/js": "^9.3.0",
-    "@types/json-schema": "^7.0.15",
+    "@eslint/js": "^9.4.0",
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.6",
     "@types/node": "^20.12.12",
-    "@types/react": "^18.3.2",
-    "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",
     "@typescript-eslint/type-utils": "^7.10.0",
     "@typescript-eslint/utils": "^7.10.0",
-    "eslint": "^8.56.0",
+    "chai": "^4.4.1",
+    "eslint": "9.x",
     "eslint-plugin-react": "^7.34.1",
     "globals": "^15.3.0",
-    "typescript-eslint": "^7.10.0"
+    "mocha": "^10.4.0",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^7.12.0"
   }
 }

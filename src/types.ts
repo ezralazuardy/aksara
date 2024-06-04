@@ -1,26 +1,17 @@
-import { FinishReason, CallWarning } from "ai";
+export type Shift = { CoreSound: string; len: number };
 
-// the response from the generateText function.
-export type TextResponse = {
-  // the model ID.
-  model: string;
+export type Character = { [key: string]: string };
 
-  // the generated text.
-  text: string;
+export type Consonant = Character;
 
-  // the reason why the generation finished.
-  readonly finishReason: FinishReason;
+export type Matra = Character;
 
-  // the token usage of the generated text.
-  readonly usage: TokenUsage;
+export type SpecialSound = Character;
 
-  // the warnings that occurred during the generation.
-  warnings: CallWarning[] | undefined;
-};
+export type Digit = Character;
 
-// the token usage of the generated text.
-export type TokenUsage = {
-  promptTokens: number;
-  completionTokens: number;
-  totalTokens: number;
+export type TranslateConfiguration = {
+  typeMode: boolean;
+  withMurda: boolean;
+  withSpace: boolean;
 };

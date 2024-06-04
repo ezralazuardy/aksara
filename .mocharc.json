@@ -1,0 +1,8 @@
+{
+  "loader": "ts-node/esm",
+  "require": ["ts-node/register", "chai/register-expect.js"],
+  "extensions": ["ts", "tsx"],
+  "spec": ["tests/**/*.test.*"],
+  "watch-files": ["src"],
+  "allowImportingTsExtensions": true
+}

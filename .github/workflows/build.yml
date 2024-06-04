@@ -18,5 +18,7 @@ jobs:
         run: npm ci --legacy-peer-deps
       - name: "🔍 Performing Lint"
         run: npm run lint
+      - name: "🧪 Running Tests"
+        run: npm run test
       - name: "🔨 Building Package"
         run: npm run build

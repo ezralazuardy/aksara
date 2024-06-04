@@ -2,22 +2,21 @@
   "compilerOptions": {
     "declaration": true,
     "esModuleInterop": true,
-    "jsx": "react",
     "lib": ["esnext", "dom"],
     "module": "NodeNext",
     "moduleResolution": "nodenext",
+    "outDir": "./dist",
+    "target": "ES2019",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strictBindCallApply": true,
-    "outDir": "./dist",
     "strict": true,
-    "target": "ES2019",
     "noEmitOnError": true,
     "downlevelIteration": true,
     "incremental": true
   },
-  "include": ["./src/**/*", "env.d.ts"],
+  "include": ["./src/**/*", "./tests/**/*", "env.d.ts"],
   "exclude": ["./**/dist", "examples", "node_modules"]
 }

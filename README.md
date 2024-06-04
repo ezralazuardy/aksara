@@ -1,90 +1,63 @@
 <div>
-  <img alt="Build" src="https://github.com/ezralazuardy/gem/actions/workflows/build.yml/badge.svg" />
-  <img alt="CodeQL Analysis" src="https://github.com/ezralazuardy/gem/actions/workflows/github-code-scanning/codeql/badge.svg" />
-  <img alt="NPM License" src="https://img.shields.io/npm/l/%40ezralazuardy%2Fgem" />
-  <img alt="NPM Unpacked Size" src="https://img.shields.io/npm/v/%40ezralazuardy%2Fgem" />
-  <img alt="NPM Unpacked Size" src="https://img.shields.io/npm/unpacked-size/%40ezralazuardy%2Fgem" />
-  <img alt="NPM Type Definitions" src="https://img.shields.io/npm/types/%40ezralazuardy%2Fgem" />
+  <img alt="Build" src="https://github.com/ezralazuardy/aksara/actions/workflows/build.yml/badge.svg" />
+  <img alt="CodeQL Analysis" src="https://github.com/ezralazuardy/aksara/actions/workflows/github-code-scanning/codeql/badge.svg" />
+  <img alt="NPM License" src="https://img.shields.io/npm/l/%40ezralazuardy%2Faksara" />
+  <img alt="NPM Unpacked Size" src="https://img.shields.io/npm/v/%40ezralazuardy%2Faksara" />
+  <img alt="NPM Unpacked Size" src="https://img.shields.io/npm/unpacked-size/%40ezralazuardy%2Faksara" />
+  <img alt="NPM Type Definitions" src="https://img.shields.io/npm/types/%40ezralazuardy%2Faksara" />
 </div>
 
-## 💎 gem
+## ꦲ aksara
 
-A more fun way to interact with Gemini.
+Translate a text into Javanese Script in one line of code.
 
 ```typescript
-await ask("am i deserve better?");
+translate("aksara jawa"); // ꦲꦏ꧀ꦱꦫ​ꦗꦮ
 ```
 
-Gem is a simple package that allows you to interact with the Gemini API in a more human-friendly way.
+Aksara is a simple package that helps you to translate your text into Javanese Script or also known as _Aksara Jawa_, which is one of the most beautiful scripts in the world.
 
-It's like talking to a friend, but in a more professional way. It's simplify the process of sending requests to the Gemini API, so you can focus more on the conversation itself. It's even more simpler than other API wrappers.
+The translated text will be formatted as [Unicode](https://home.unicode.org) string of Javanese Script characters that can be used in any text editor or web browser, without any specific font requirement.
 
-> 🚧 This package is still under heavy development. Beware of breaking changes.
+It's also typescript compatible, so you can use it in any javascript or typescript project.
+
+> Reference: [Wikipedia](https://en.wikipedia.org/wiki/Javanese_script)
 
 <br/>
 
 ### 🚀 Getting Started
 
-It's only require 3 simple steps to get started.
+It's only require 2 simple steps to get started.
 
 Install the package
 
 ```bash
-npm install @ezralazuardy/gem
+npm install @ezralazuardy/aksara
 ```
 
-Set the environment variables
-
-```bash
-GEMINI_API_KEY="<YOUR_GEMINI_API_KEY>"
-```
-
-Ask the Gemini.
+And use it!
 
 ```typescript
-import { ask } from "@ezralazuardy/gem";
+import { translate } from "@ezralazuardy/aksara";
 
-const response = await ask("what is the weather today?");
-
-console.log(response);
+console.log(translate("aksara jawa")); // ꦲꦏ꧀ꦱꦫ​ꦗꦮ
 ```
-
-Yup, just like that! Simple, right?
 
 For advanced usage, please read the [documentation](#-documentation) below.
 
 <br/>
 
-### ⚙️ Using Specific Model
+### 🔄 Revert Translation
 
-By default, the model used is `gemini-pro`. You can change it by setting the `GEMINI_MODEL_ID` environment variable.
+If you want to revert the translation, you can just use the `translate` function again.
 
-```bash
-GEMINI_MODEL_ID="gemini-pro"
+```typescript
+import { translate } from "@ezralazuardy/aksara";
+
+console.log(translate("ꦲꦏ꧀ꦱꦫ​ꦗꦮ")); // aksara jawa
 ```
 
-Please beware of the pricing and capabilities of each model.
-
-As of `v0.0.1`, the following models are available:
-
-- `gemini-pro` (default)
-- `gemini-1.5-pro-latest`
-
-> Plase refer to these references:
-> [Gemini API Models](https://ai.google.dev/gemini-api/docs/models/gemini), [Gemini API Pricing](https://ai.google.dev/gemini-api/pricing).
-
-<br/>
-
-### 🚥 Roadmap
-
-The following features are planned to be implemented in the future.
-
-| Supported | Method           | Version   | Usage                                                    |
-| --------- | ---------------- | --------- | -------------------------------------------------------- |
-| 🟢        | `ask`            | `v0.0.1+` | Generates text for a given prompt.                       |
-| 🔴        | `askByStream`    | `-`       | Streams a text generations.                              |
-| 🔴        | `object`         | `-`       | Generates a typed, structured object for a given prompt. |
-| 🔴        | `objectByStream` | `-`       | Streams a typed, structured object for a given prompt.   |
+No need to use other function. Simple, right?
 
 <br/>
 
@@ -92,4 +65,4 @@ The following features are planned to be implemented in the future.
 
 A proper documentation is still in progress 🥲
 
-> Written in [Typescript](https://www.typescriptlang.org). Heavily inspired by [Vercel AI](https://sdk.vercel.ai) and [Gemini](https://gemini.google.com).
+> Written in [Typescript](https://www.typescriptlang.org). Heavily inspired by [@bennylin](https://github.com/bennylin).

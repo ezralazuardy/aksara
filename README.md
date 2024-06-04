@@ -23,11 +23,11 @@
 
 <br/>
 
-Aksara is a simple package that helps you to translate your text into Javanese Script or also known as _Aksara Jawa_, which is one of the most beautiful scripts in the world. You can translate a latin text into Javanese Script or vice-versa in one line of code.
-
 ```typescript
 translate("hana caraka"); // ꦲꦤ ꦕꦫꦏ
 ```
+
+Aksara is a simple package that helps you to translate your text into Javanese Script or also known as _Aksara Jawa_, which is one of the most beautiful scripts in the world. You can translate a latin text into Javanese Script or vice-versa in just one line of code.
 
 The translated text will be formatted as [Unicode](https://home.unicode.org) string of Javanese Script characters that can be used in any text editor or web browser, without any specific font requirement.
 
